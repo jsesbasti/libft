@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_fatoi.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jsebasti <jsebasti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/25 19:03:19 by jsebasti          #+#    #+#             */
-/*   Updated: 2023/02/03 12:00:31 by jsebasti         ###   ########.fr       */
+/*   Created: 2023/04/12 09:43:02 by jsebasti          #+#    #+#             */
+/*   Updated: 2023/04/12 09:46:11 by jsebasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ static int	limit(long long n, const char *s, int sign)
 	return (1);
 }
 
-int	ft_atoi(const char *str, int *temp)
+int	ft_fatoi(const char *str, float *temp)
 {
 	size_t		i;
 	int			sign;
