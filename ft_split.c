@@ -48,11 +48,8 @@ static int	word_len(const char *str, int i, char c)
 
 char	**malloc_error(char **new, int j)
 {
-	while (j >= 0)
-	{
+	while (j-- >= 0)
 		free(new[j]);
-		--j;
-	}
 	free(new);
 	return (NULL);
 }
