@@ -21,9 +21,9 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	char	*res;
 
 	if (!s1)
-		return ((char *)s2);
+		return (ft_strdup((char *)s2));
 	if (!s2)
-		return ((char *)s1);
+		return (ft_strdup((char *)s1));
 	len1 = ft_strlen(s1);
 	len2 = ft_strlen(s2);
 	res = (char *)malloc(len1 + len2 + 1);
