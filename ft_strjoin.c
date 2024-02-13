@@ -26,14 +26,14 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		return (ft_strdup((char *)s1));
 	len1 = ft_strlen(s1);
 	len2 = ft_strlen(s2);
-	res = (char *)malloc(len1 + len2 + 1);
+	res = (char *)ft_calloc(len1 + len2 + 1);
 	if (!res)
 		return (NULL);
 	i = -1;
 	j = -1;
 	while (++i < len1)
 		res[i] = ((char *)s1)[i];
-	while (++j <= len2)
+	while (++j < len2)
 		res[i + j] = ((char *)s2)[j];
 	return (res);
 }
