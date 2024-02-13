@@ -6,7 +6,7 @@
 /*   By: jsebasti <jsebasti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/23 15:10:24 by jsebasti          #+#    #+#             */
-/*   Updated: 2022/09/26 18:25:24 by jsebasti         ###   ########.fr       */
+/*   Updated: 2024/02/13 05:21:53 by jsebasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,8 @@ char	**ft_split(char const *s, char c)
 	int		i;
 	char	**new;
 
+	if (!s)
+		return (NULL);
 	new = malloc((count_words(s, c) + 1) * sizeof(char *));
 	if (!new)
 		return (NULL);
