@@ -30,7 +30,6 @@ static int	count_words(const char *str, char c)
 		}
 		else if (str[i] == c)
 			in_word = 0;
-		i++;
 	}
 	return (sum);
 }
