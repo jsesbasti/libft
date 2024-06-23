@@ -16,19 +16,21 @@ static int	count_words(const char *str, char c)
 {
 	int	sum;
 	int	in_word;
+	int	i;
 
 	sum = 0;
+	i = -1;
 	in_word = 0;
-	while (*str != '\0')
+	while (str[++i] != '\0')
 	{
-		if (*str != c && in_word == 0)
+		if (str[i] != c && in_word == 0)
 		{
 			++sum;
 			in_word = 1;
 		}
-		else if (*str == c)
+		else if (str[i] == c)
 			in_word = 0;
-		str++;
+		i++;
 	}
 	return (sum);
 }
